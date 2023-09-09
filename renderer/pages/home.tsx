@@ -3,19 +3,18 @@ import 'primeicons/primeicons.css';
 import Head from 'next/head';
 import Link from 'next/link';
 import TopBar from '../components/top_bar';
+import LeftSide from '../components/left_home';
+import MiddleSide from '../components/middle_home';
+import RightSide from '../components/right_home';
 
 function Home() {
   return (
     <React.Fragment>
       <TopBar />
-      <div>
-        <p>
-          ⚡ Electron + Next.js ⚡ -
-          <Link href="/next">
-            <a>Go to next page</a>
-          </Link>
-        </p>
-        <img src="/images/logo.png" />
+      <div className='flex justify-between px-3 mt-7 h-5/6'>
+        <LeftSide />
+        <MiddleSide />
+        <RightSide />
       </div>
     </React.Fragment>
   );

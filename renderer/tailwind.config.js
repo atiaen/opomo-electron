@@ -11,11 +11,15 @@ module.exports = {
       white: colors.white,
       gray: colors.gray,
       blue: colors.blue,
-      primary_blue:'#687099'
+      primary_blue:'#687099',
+      primary_light_blue: '#E9E9E9',
+      primary_blue_2: '#334CCB47'
     },
     extend: {
       colors:{
-        primary_blue:'#687099'
+        primary_blue:'#687099',
+        primary_light_blue: '#E9E9E9',
+        primary_blue_2: '#334CCB47'
       }
     },
   },

@@ -3,22 +3,22 @@
 export default function TopBar() {
 
     return (
-        <div className="w-full px-3 py-2 flex justify-between">
-            <div className="flex w-2/4 justify-between">
-                <button className="p-3 bg-primary_blue rounded-md">
+        <div className="w-full px-3 py-1 flex justify-between">
+            <div className="flex w-2/4 px-3">
+                <button className="px-2 py-0 mr-3 bg-primary_blue rounded-md">
                     <i className="pi pi-cog" />
                 </button>
 
-                <button className="p-3 rounded-md">
+                <button className="px-2 py-0 mr-3 rounded-md bg-primary_blue">
                     <i className="pi pi-chart-bar" />
                 </button>
 
-                <button className="p-3 rounded-md">
+                <button className="px-2 py-0 rounded-md bg-primary_blue">
                     <i className="pi pi-palette" />
                 </button>
             </div>
-            <div className="w-2/4">
-                <button className="p-3 rounded-md flex">
+            <div className="flex w-2/4 justify-end">
+                <button className="px-2 py-1 rounded-md flex mr-3 bg-primary_blue">
                     <svg width="27" height="21" viewBox="0 0 27 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10.858 1.70884H8.35529C12.8307 8.77531 10.2201 11.0327 8.35529 11.278H14.5384L10.858 1.70884Z" fill="white" />
                         <path d="M12.0357 11.278C18.6097 11.278 26.8986 15.8418 26.7557 20.1111C27.1992 14.8112 20.8238 10.3456 18.6801 9.06975C18.0132 9.21697 15.58 9.9825 12.0357 11.278Z" fill="white" />
