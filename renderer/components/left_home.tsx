@@ -1,3 +1,5 @@
+import HistoryTask from "./common/history_task";
+
 export default function LeftSide() {
     return (
         <div className="mt-5 px-3">
@@ -28,6 +30,51 @@ export default function LeftSide() {
                     <p className="">
                         {new Date().toDateString()}
                     </p>
+                </div>
+
+                <div className="h-[310px] lg:h-[520px] overflow-y-scroll overflow-x-hidden no-scrollbar mt-5">
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
+
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
+
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
+
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
+
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
+
+
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
+
+                    <HistoryTask
+                        task_name={"Test"}
+                        task_objective={"Some objective here"}
+                        completed_date_time={"2023/09/07"}
+                    />
                 </div>
             </div>
         </div>

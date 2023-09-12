@@ -13,13 +13,15 @@ module.exports = {
       blue: colors.blue,
       primary_blue:'#687099',
       primary_light_blue: '#E9E9E9',
-      primary_blue_2: '#334CCB47'
+      primary_blue_2: '#334CCB47',
+      accent_black:"#66666640",
     },
     extend: {
       colors:{
         primary_blue:'#687099',
         primary_light_blue: '#E9E9E9',
-        primary_blue_2: '#334CCB47'
+        primary_blue_2: '#334CCB47',
+        accent_black:"#66666640",
       }
     },
   },
