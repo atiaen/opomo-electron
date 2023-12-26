@@ -11,7 +11,7 @@ function Home() {
   return (
     <React.Fragment>
       <TopBar />
-      <div className='flex justify-between px-3 mt-7 h-5/6'>
+      <div className='flex justify-between px-3 mt-3 h-5/6'>
         <LeftSide />
         <MiddleSide />
         <RightSide />
