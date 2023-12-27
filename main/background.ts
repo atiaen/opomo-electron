@@ -2,13 +2,15 @@ import { app } from 'electron';
 import serve from 'electron-serve';
 import { createWindow } from './helpers';
 import { Database } from 'sqlite3';
+import { Runners } from './backend_runners/runner';
+import path from 'path';
 
 export class Background {
   public isProd: boolean = process.env.NODE_ENV === 'production';
   public dev_mode = process.argv[3].split(" ")
   static db:Database;
 
-  public main(){
+  public async main(){
     if (this.dev_mode[0] === "false") {
       serve({ directory: 'app' });
       Background.db = new Database('opomo.db');
@@ -19,10 +21,16 @@ export class Background {
     
     (async () => {
       await app.whenReady();
-    
+      await Runners.createTables();
+      // await Runners.getAllProjects();
+      // await Runners.getAllTasks();
+
       const mainWindow = createWindow('main', {
         width: 1000,
         height: 600,
+        webPreferences:{
+          preload: path.join(__dirname, 'loader.ts')
+        }
       });
     
       if (this.isProd) {
@@ -45,5 +53,5 @@ export class Background {
 }
 
 
-let back = new Background();
-back.main();
+let background = new Background();
+background.main();

@@ -1,9 +1,21 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TaskProjectsItems from "./common/tasks_projects_items";
+import  { Project} from "../../main/models/project";
+//import  { Runners } from "../../main/backend_runners/runner";
 
 export default function RightSide() {
     const [selectedType, setSelectedType] = useState<string>('all');
+    const [projects,setProjects] = useState<Project[]>([]);
 
+    // async function getProj() {
+    //     let vals = await Runners.getAllProjects();
+    //     setProjects(vals);
+    // }
+
+    // useEffect(() => {
+    //     getProj();
+    //     console.log(projects);
+    // })
 
     return (
         <div className="mt-0 px-3 w-2/6">
