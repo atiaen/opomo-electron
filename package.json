@@ -5,7 +5,7 @@
   "author": "Oladipo Adeayo <adeayooladipo@gmail.com>",
   "main": "app/background.js",
   "scripts": {
-    "dev": "nextron",
+    "dev": "nextron --electron-options=\"true\"",
     "build": "nextron build",
     "postinstall": "electron-builder install-app-deps"
   },

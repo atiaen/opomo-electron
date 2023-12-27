@@ -29,9 +29,25 @@ export default function MiddleSide() {
                     <i className="pi pi-stop" />
                 </button>
             </div>
-            <div>
+            <div className="mb-5">
                 <div>
                     Complete
+                </div>
+            </div>
+            <div className="w-full bg-[#6666666B] rounded-3xl p-5">
+                <div className="flex justify-between mb-3">
+                    Title here
+                    <button>
+                        <i className="pi pi-ellipsis-h text-[#7D8089]" />
+                    </button>
+                </div>
+                <div>
+                    <p className="text-sm">
+                        Objective here
+                    </p>
+                </div>
+                <div className="rounded-xl mt-4 w-fit px-1 py-1 bg-[#DAE0FF] font-semibold">
+                    <span className="text-[#145361]">PROJECT NAME</span>
                 </div>
             </div>
         </div>
